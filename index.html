@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>在线音乐播放</title>
+	<link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <div id="wrapper">
+    	<header>
+    		<button class="submit">搜索</button><input type="text" class="search" placeholder="请输入歌名、歌手">
+    	</header>
+
+    	<main>
+    	    <!-- 音乐展示页面 -->
+    		<section id="music-show">
+    		    <h1>新歌版</h1>
+		    	<ol class="music-list">
+		    		<li>
+		    		    <span class="song-name"></span>
+		    		    <span class="singer-name"></span>
+		    		    <span class="song-time"></span>
+		    		    <div class="controller">
+		    		    	<a href="#" class="pause controll"></a>
+		    		    </div>
+		    		</li>
+		    	</ol>
+		    </section>
+
+            <!-- 音乐类型导航 -->
+            <nav id="music-type">
+            	<h1>音乐分类</h1>
+            	<ul>
+            		<li><a href="#" data-type="1">新歌版</a></li>
+            		<li><a href="#" data-type="2">热歌版</a></li>
+            		<li><a href="#" data-type="11">摇滚版</a></li>
+            		<li><a href="#" data-type="12">爵士</a></li>
+            		<li><a href="#" data-type="16">流行</a></li>
+            		<li><a href="#" data-type="21">欧美金榜曲</a></li>
+            		<li><a href="#" data-type="22">经典老歌版</a></li>
+            		<li><a href="#" data-type="23">情歌对唱版</a></li>
+            		<li><a href="#" data-type="24">影视金曲版</a></li>
+            		<li><a href="#" data-type="25">网络歌曲版</a></li>
+            	</ul>
+            </nav>
+
+    	</main>
+
+    	<!-- 音乐播放 -->
+    	<audio id="play-audio">
+    		<source src="#" type="audio/mpeg"></source>
+    	</audio>
+    </div>
+
+  
+<script src="jquery-3.1.0.min.js"></script>
+<script src="music.js"></script>
+</body>
+</html>
